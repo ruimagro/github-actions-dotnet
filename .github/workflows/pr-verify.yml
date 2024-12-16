@@ -1,0 +1,22 @@
+﻿name: PR Verify
+
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    name: PR Verify
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup DotNet ${{ env.DOTNET_VERSION }} Environment
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
+
