@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     name: PR Verify
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4.2.2
