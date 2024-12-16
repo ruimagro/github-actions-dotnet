@@ -19,6 +19,6 @@ public class HomeControllerTests
 
         // Assert
         var viewResult = Assert.IsType<ViewResult>(result);
-               Assert.Null(viewResult.ViewName); // Default view name is null
+        Assert.Null(viewResult.ViewName); // Default view name is null
     }
 }
