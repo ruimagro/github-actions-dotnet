@@ -12,10 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4.2.2
 
-      - name: Setup DotNet 8.0.0 Environment
+      - name: Setup DotNet 9.0 Environment
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 8.0.0
+          dotnet-version: 9.0
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
