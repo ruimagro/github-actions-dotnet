@@ -23,4 +23,3 @@ namespace WeatherApplication.Unit.Tests
         }
     }
 }
-}
